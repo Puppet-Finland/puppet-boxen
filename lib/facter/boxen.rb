@@ -58,5 +58,5 @@ if File.file?(dot_boxen)
 end
 
 facts.each do |k, v|
-  Facter.add(k) { has_weight(-1); setcode { v } }
+  Facter.add(k) { has_weight(10); setcode { v } }
 end
